@@ -272,7 +272,6 @@ header {
     font-size: 31px;
     color: #F16767;
     color: #415cc9;
-
 }
 
 .ag-timeline-card_item {
@@ -539,7 +538,7 @@ lottie-player {
 }
 
 .nearby-loc>div h5 {
-    font-family: var(--paragraph);
+    font-family: var(--sub-heading);
     font-weight: 800;
     color: #415cc9b0;
     text-align: center;
@@ -561,3 +560,106 @@ lottie-player {
     margin: 0 0 10px 0;
     text-align: center;
 }
+
+
+footer {
+    background-color: #251605;
+    color: #F6E27F;
+    /* 5bff4c */
+}
+
+footer h2 {
+    font-family: var(--head-font);
+    font-size: 38px;
+    text-transform: capitalize;
+    text-align: center;
+    display: flex;
+    letter-spacing: 0.07rem;
+}
+
+
+footer h2:before,
+footer h2:after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid;
+    margin: auto;
+    color: #f07021;
+}
+
+footer h2 span {
+    margin: 0 20px 0;
+}
+
+footer h3 {
+    text-align: center;
+    padding: 20px 0;
+    color: #F8F8F8;
+    line-height: 1.2rem;
+    letter-spacing: 0.08rem;
+    font-weight: 300;
+    font-family: var(--sub-heading);
+    text-transform: capitalize;
+}
+
+footer i {
+    margin-right: 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    margin: 5% 0 2%;
+    grid-gap: 2rem
+}
+
+.footer-grid img {
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+}
+
+.contact-no h4 a {
+    font-family: var(--sub-heading);
+    color: #F6E27F;
+    font-size: 34px;
+}
+
+.social-link a {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.social-link i {
+    padding: 11px 13px;
+    border-radius: 4px;
+    color: #3b5998;
+    background-color: #fff;
+}
+
+.social-link .fa-twitter {
+    color: #00acee;
+}
+
+.social-link .fa-instagram {
+    color: #Fff;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.footer-copyright {
+    background-color: #251605;
+    padding: 20px;
+    color: #F8F8F8;
+}
+
+.footer-copyright h4 {
+    text-align: center;
+    font-family: var(--sub-heading);
+    letter-spacing: 0.08rem;
+    font-weight: 100;
+}
+
+
+/* about */

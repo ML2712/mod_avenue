@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-head h1 {
+            font-family: var(--head-font);
+            text-align: center;
+            display: flex;
+            letter-spacing: 0.07rem;
+            margin: 0 0 8%
+        }
+
+        .about-head h1:before {
+            content: "";
+            flex: 1;
+            border-bottom: 1px solid;
+            margin: auto;
+            color: #f07021;
+        }
+
+        .about-head span {
+            font-size: 56px;
+            margin: 0 20px 0;
+            background: -webkit-linear-gradient(50deg, #7286d3, #ed6a5a, #333);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .about-header {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 2rem;
+            align-items: center;
+        }
+
+        .about-header img {
+            display: block;
+            height: 400px;
+            margin: 0 auto;
+            /* box-shadow: rgba(240, 172, 46, 0.4) -5px 5px, rgba(227, 240, 46, 0.959) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(204, 240, 46, 0.1) -20px 20px, rgba(211, 240, 46, 0.05) -25px 25px; */
+        }
+
+        .about-header>div p {
+            font-family: var(--paragraph);
+            letter-spacing: 0.06rem;
+            line-height: 1.6rem;
+            margin: 0 0px;
+            color: #808080;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 2rem;
+            align-items: center;
+        }
+
+        .about-content h2 {
+            font-size: 44px;
+            font-family: var(--head-font);
+            color: #415cc9;
+            margin: 0 0 26px;
+            text-align: center;
+        }
+
+        .about-content img {
+            display: block;
+            margin: 0 auto;
+            height: 350px;
+            /* width: 420px; */
+            border-radius: 20px;
+            box-shadow: -10px 17px 26px #f07021;
+        }
+
+        .about-content li {
+            font-family: var(--paragraph);
+            letter-spacing: 0.06rem;
+            line-height: 1.6rem;
+            margin: 0 0 16px;
+            /* list-style: square; */
+            color: #808080;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="inner-width">
+        <div class="about-head">
+            <h1><span>About MOD Avenue</span></h1>
+        </div>
+        <div class="about-header">
+            <div>
+                <img src="/img/aboutus/Picture1.png" alt="">
+            </div>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quam incidunt nihil rerum, ratione
+                    numquam nam accusantium quod, adipisci in labore minus impedit nesciunt. Voluptatibus nostrum
+                    repellendus consectetur quia iure maiores pariatur sapiente at, consequuntur tempore quo optio atque
+                    asperiores, itaque obcaecati fuga temporibus quisquam mollitia cum ipsa commodi molestias.
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="about-content inner-width">
+        <div>
+            <h2>Rooms</h2>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis totam ex ab dolores
+                voluptatibus earum delectus quisquam minus. Cupiditate, doloremque.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, impedit.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe eius quasi numquam architecto
+                exercitationem accusantium porro quisquam tempora similique earum corporis dolor natus dolores
+                obcaecati, ex repellendus corrupti dolorum sed?</li>
+        </div>
+        <div>
+            <img src="/img/aboutus/room.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="about-content inner-width">
+        <div>
+            <img src="/img/aboutus/restro space.jpg" alt="">
+        </div>
+        <div>
+            <h2>Restaurant Space</h2>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis totam ex ab dolores
+                voluptatibus earum delectus quisquam minus. Cupiditate, doloremque.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, impedit.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe eius quasi numquam architecto
+                exercitationem accusantium porro quisquam tempora similique earum corporis dolor natus dolores
+                obcaecati, ex repellendus corrupti dolorum sed?</li>
+        </div>
+    </div>
+
+    <div class="about-content inner-width">
+        <div>
+            <h2>Kitchen</h2>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis totam ex ab dolores
+                voluptatibus earum delectus quisquam minus. Cupiditate, doloremque.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, impedit.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe eius quasi numquam architecto
+                exercitationem accusantium porro quisquam tempora similique earum corporis dolor natus dolores
+                obcaecati, ex repellendus corrupti dolorum sed?</li>
+        </div>
+        <div>
+            <img src="/img/aboutus/chef.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="about-content inner-width">
+        <div>
+            <img src="/img/aboutus/bakery.jpg" alt="">
+        </div>
+        <div>
+            <h2>Bakery & Coffee Shop</h2>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis totam ex ab dolores
+                voluptatibus earum delectus quisquam minus. Cupiditate, doloremque.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, impedit.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe eius quasi numquam architecto
+                exercitationem accusantium porro quisquam tempora similique earum corporis dolor natus dolores
+                obcaecati, ex repellendus corrupti dolorum sed?</li>
+        </div>
+    </div>
+
+    <div class="about-content inner-width">
+        <div>
+            <h2>Terrace Restaurant</h2>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis totam ex ab dolores
+                voluptatibus earum delectus quisquam minus. Cupiditate, doloremque.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, impedit.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe eius quasi numquam architecto
+                exercitationem accusantium porro quisquam tempora similique earum corporis dolor natus dolores
+                obcaecati, ex repellendus corrupti dolorum sed?</li>
+        </div>
+        <div>
+            <img src="/img/aboutus/terrace.jpg" alt="">
+        </div>
+    </div>
+
+</body>
+
+</html>
