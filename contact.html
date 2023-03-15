@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .contact-head {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 2rem;
+            align-items: center;
+        }
+
+        .contact-head h1 {
+            font-family: var(--head-font);
+            font-size: 56px;
+            text-transform: capitalize;
+            letter-spacing: 0.07rem;
+            background: -webkit-linear-gradient(50deg, #7286d3, #ed6a5a, #333);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        hr {
+            width: 50%;
+
+        }
+
+        .form-container {
+            /* background-color: #251605; */
+            backdrop-filter: blur(5px);
+            background: -webkit-linear-gradient(50deg, #7286d3, #ed6a5a, #333);
+            border-radius: 26px;
+            box-shadow: 35px 35px 68px 0px rgba(74, 74, 74, 0.5), inset -8px -8px 16px 0px rgba(74, 74, 74, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
+            padding: 50px 50px;
+
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form input,
+        textarea {
+            font-family: var(--paragraph);
+            margin-bottom: 5%;
+            padding: 10px;
+            outline: none;
+            border: none;
+            border-radius: 6px;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: #000;
+            font-family: var(--paragraph);
+            letter-spacing: 0.07rem;
+            font-weight: 400;
+        }
+
+        .contact-form .btn {
+            display: block;
+            margin: 0 auto;
+            width: 30%;
+            color: #f8f8f8;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            letter-spacing: 0.08rem;
+            background-color: #3b5998;
+
+        }
+
+        @media only screen and (max-width: 1080px) {
+            .contact-head h1 {
+                font-size: 46px;
+            }
+
+            .contact-head {
+                grid-gap: 1rem;
+            }
+        }
+
+
+        @media only screen and (max-width: 780px) {
+            .contact-head h1 {
+                font-size: 36px;
+            }
+
+            .contact-form .btn {
+                font-size: 13px;
+            }
+
+            .form-container {
+                padding: 40px;
+            }
+        }
+
+        @media only screen and (max-width: 450px) {
+            .contact-head {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-head h1 {
+                font-size: 28px;
+            }
+
+            .contact-form input {
+                padding: 6px;
+            }
+
+            .form-container {
+                padding: 30px;
+            }
+
+            .contact-form input::placeholder,
+            .contact-form textarea::placeholder {
+                font-size: 10px;
+            }
+
+            hr {
+                width: 30%;
+            }
+        }
+
+        @media only screen and (max-width: 380px) {
+            .contact-head h1 {
+                font-size: 24px;
+            }
+
+            hr {
+                margin: 0 0 0 3px;
+                width: 20%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="inner-width">
+        <div class="contact-head">
+            <div>
+                <h1>get in touch</h1>
+                <hr>
+            </div>
+            <div class="form-container">
+                <form action="" class="contact-form">
+                    <input type="text" placeholder="Name*" required>
+                    <input type="email" placeholder="Email*" required>
+                    <input type="tel" placeholder="Mobile No*" required>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Query*" required></textarea>
+                    <input class="btn" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

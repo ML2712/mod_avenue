@@ -67,6 +67,7 @@
             font-family: var(--head-font);
             color: #415cc9;
             margin: 0 0 26px;
+            letter-spacing: 0.07rem;
             text-align: center;
         }
 
@@ -87,6 +88,111 @@
             /* list-style: square; */
             color: #808080;
             text-align: center;
+        }
+
+        @media only screen and (max-width: 1080px) {
+            .about-head span {
+                font-size: 46px;
+            }
+
+            .about-header {
+                grid-gap: 1rem;
+            }
+
+            .about-header img {
+                width: 580px;
+            }
+
+            .about-content h2 {
+                font-size: 39px;
+            }
+
+            .about-content img {
+                height: 300px;
+            }
+        }
+
+        @media only screen and (max-width: 780px) {
+            .about-head span {
+                font-size: 36px;
+            }
+
+            .about-header img {
+                height: 300px;
+                width: 320px;
+                /* object-fit: cover; */
+            }
+
+            .about-header>div p {
+                font-size: 15px;
+            }
+
+            .about-content h2 {
+                font-size: 29px;
+            }
+
+            .about-content li {
+                font-size: 14px;
+                text-align: left;
+            }
+
+            .about-content img {
+                height: 300px;
+                max-width: 300px;
+                /* width: 260px; */
+                object-fit: cover;
+            }
+
+            .about-content {
+                grid-gap: 1rem;
+            }
+        }
+
+
+        @media only screen and (max-width: 450px) {
+            .about-head span {
+                font-size: 28px;
+            }
+
+            .about-header {
+                grid-template-columns: 1fr;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .about-content:nth-child(3),
+            .about-content:nth-child(5) {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            .about-head span {
+                margin: 0 5px 0 10px;
+            }
+
+            .about-content h2 {
+                font-size: 24px;
+            }
+        }
+
+        @media only screen and (max-width: 380px) {
+            .about-head span {
+                font-size: 24px;
+            }
+
+            .about-header>div p {
+                font-size: 13px;
+            }
+
+            .about-content h2 {
+                font-size: 22px;
+            }
+
+            .about-content li {
+                font-size: 13px;
+            }
         }
     </style>
 </head>
